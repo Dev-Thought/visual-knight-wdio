@@ -7,7 +7,7 @@
     "clean": "rimraf lib .tmp",
     "phantom": "phantomjs --webdriver=4444",
     "build": "npm run clean && babel ./src -d lib",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "prepublish": "npm run build",
     "release": "np"
   },
