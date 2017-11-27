@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "The webdriverio service for visual knight",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "*.md",
+    "src",
+    "lib"
+  ],
   "scripts": {
     "clean": "rimraf lib .tmp",
     "phantom": "phantomjs --webdriver=4444",
