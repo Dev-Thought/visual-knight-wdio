@@ -60,7 +60,7 @@ export default class RemoteCompare extends BaseCompare {
         let testSessionId = '';
         // console.log('Requesting signed url');
         // console.time('signedUrlTime');
-        await request.post(this.api + 'screenshot-v3', options, function (error, response, body) {
+        await request.post(this.api + '/screenshot-v3', options, function (error, response, body) {
             if (error) {
                 console.log('Error!', error);
             } else {
@@ -83,7 +83,7 @@ export default class RemoteCompare extends BaseCompare {
 
         // console.log('Waiting for result');
         // console.time('resultTime');
-        let testData = await request.get(`${this.api}testsession-state?testSessionId=${testSessionId}`, {
+        let testData = await request.get(`${this.api}/testsession-state?testSessionId=${testSessionId}`, {
             headers
         });
         testData = JSON.parse(testData);
