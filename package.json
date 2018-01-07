@@ -1,6 +1,6 @@
 {
   "name": "visual-knight-wdio",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "The webdriverio service for visual knight",
   "main": "index.js",
   "files": [
